@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  max-height: 600px;
+
+
+}
+
+.grid{
+  border : 1px solid  lightgrey; 
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
