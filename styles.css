@@ -1,10 +1,17 @@
-.container {
+.gridContainer {
   display: flex;
   flex-wrap: wrap;
   max-width: 600px;
   max-height: 600px;
 
 
+
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap:40px;
 }
 
 .gridClone{
@@ -16,3 +23,10 @@
     box-sizing: border-box;
 }
 
+.buttons button {
+    width: 100px;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 14px;
+
+}
