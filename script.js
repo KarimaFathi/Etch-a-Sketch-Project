@@ -22,7 +22,7 @@ createGrid(16);
 const buttonsContainer = document.createElement('div');
 buttonsContainer.className = 'buttons';
 const gridDimensionBtn = document.createElement('button');
-gridDimensionBtn.textContent = 'Resizing';
+gridDimensionBtn.textContent = 'Resize';
 gridDimensionBtn.addEventListener("click", changeDimension);
 
 function changeDimension(){
@@ -53,5 +53,21 @@ function randomizeColor(){
    })
    })
 }
-randomizeBtn.textContent = "Randomizing";
+randomizeBtn.textContent = "Randomize";
 buttonsContainer.appendChild(randomizeBtn);
+
+const clearBtn = document.createElement("button");
+
+clearBtn.addEventListener("click",clearGrid);
+
+function clearGrid() {
+   const grids = document.querySelectorAll('.gridClone');
+   grids.forEach((clonedNode)=>{
+   console.log(clonedNode); // <div class=gridClone ...></div>
+   clonedNode.style.backgroundColor = "white";
+   })
+   }
+
+
+clearBtn.textContent = "Clear";
+buttonsContainer.appendChild(clearBtn);
