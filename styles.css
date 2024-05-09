@@ -9,10 +9,12 @@
 
 .container{
   display: flex;
+  gap: 40px;
   flex-direction: column;
-  gap:40px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  height: 100vh; /* Adjust the height as needed */
+  
 }
 
 .gridClone{
@@ -26,9 +28,14 @@
 }
 
 .buttons button {
-    width: 100px;
+    width: 120px;
     height: 40px;
     font-weight: bolder;
     font-size: 14px;
 
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
 }

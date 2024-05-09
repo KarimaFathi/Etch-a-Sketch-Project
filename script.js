@@ -1,4 +1,3 @@
-
 const gridContainer = document.createElement("div");
 gridContainer.className = 'gridContainer'; 
 const grid = document.createElement("div");
@@ -39,3 +38,20 @@ function changeDimension(){
 
 container.appendChild(buttonsContainer);
 buttonsContainer.appendChild(gridDimensionBtn);
+
+const randomizeBtn = document.createElement("button");
+
+randomizeBtn.addEventListener("click",randomizeColor);
+
+function randomizeColor(){
+   const grids = document.querySelectorAll('.gridClone');
+   grids.forEach((clonedNode)=>{
+   clonedNode.addEventListener('mouseenter', (e)=> {
+      // e.target.style.backgroundColor = "rgb("+e.offsetX+","+e.offsetY+",255)";
+      const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+      e.target.style.backgroundColor = randomColor;
+   })
+   })
+}
+randomizeBtn.textContent = "Randomizing";
+buttonsContainer.appendChild(randomizeBtn);
