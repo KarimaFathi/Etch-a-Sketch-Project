@@ -15,8 +15,8 @@ This project is a simple web-based implementation of the classic Etch-a-Sketch t
 
 ## Installation
 Clone the repository:
-\`\`\`bash
+```bash
 git clone https://github.com/KarimaFathi/Etch-a-Sketch-Project.git
-\`\`\`
+```
 
 Open index.html in your web browser to start the application.
