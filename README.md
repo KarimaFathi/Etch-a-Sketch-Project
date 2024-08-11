@@ -1,6 +1,6 @@
 # Etch-a-Sketch Project
 
-This project is a simple web-based implementation of the classic Etch-a-Sketch toy. It allows users to draw on a grid using their mouse or touchpad, with options to customize the grid size and color.
+This project is a simple web-based implementation of the classic Etch-a-Sketch toy. It allows users to draw on a grid using their mouse, with options to customize the grid size and color.
 
 ## Features
 - **Interactive Drawing**: Click and drag to draw on the grid.
